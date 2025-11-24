@@ -1420,43 +1420,52 @@
         <!-- Contact Form (mailto simple version) -->
         <div class="card">
           <!-- NOTE: mailto opens the user’s email app. For advanced forms you can connect to a backend later. -->
-          <form action="mailto:arshadwarsi40@gmail.com" method="post" enctype="text/plain">
-            <div class="field">
-              <label for="name">Your Name</label>
-              <input class="input" id="name" name="Name" type="text" placeholder="Enter your name" required />
-            </div>
-            <div class="field">
-              <label for="email">Email Address</label>
-              <input class="input" id="email" name="Email" type="email" placeholder="you@example.com" required />
-            </div>
-            <div class="field">
-              <label for="whatsapp">WhatsApp Number (optional)</label>
-              <input class="input" id="whatsapp" name="WhatsApp" type="text" placeholder="+91 ..." />
-            </div>
-            <div class="field">
-              <label for="type">Project Type</label>
-              <input class="input" id="type" name="Project Type" type="text"
-                     placeholder="Business website, e-commerce, landing page..." />
-            </div>
-            <div class="field">
-              <label for="budget">Approx. Budget (optional)</label>
-              <input class="input" id="budget" name="Budget" type="text"
-                     placeholder="e.g. ₹10,000 – ₹20,000" />
-            </div>
-            <div class="field">
-              <label for="message">Project Details</label>
-              <textarea class="textarea" id="message" name="Message"
-                        placeholder="Share about your business, goals, and any reference website you like."
-                        required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">
-              <i class="fa-regular fa-paper-plane"></i> Send via Email
-            </button>
-            <div class="contact-small">
-              You can also just message directly on WhatsApp if that feels easier.
-            </div>
-          </form>
-        </div>
+         <form action="https://formsubmit.co/arshadwarsi40@gmail.com" method="POST">
+
+  <!-- Disable Captcha -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Redirect to thank-you message -->
+  <input type="hidden" name="_next" value="https://arshadwarsi.github.io/?success=true">
+
+  <div class="field">
+    <label for="name">Your Name</label>
+    <input class="input" id="name" name="Name" type="text" placeholder="Enter your name" required />
+  </div>
+
+  <div class="field">
+    <label for="email">Email Address</label>
+    <input class="input" id="email" name="Email" type="email" placeholder="you@example.com" required />
+  </div>
+
+  <div class="field">
+    <label for="whatsapp">WhatsApp Number</label>
+    <input class="input" id="whatsapp" name="WhatsApp" type="text" placeholder="+91 ..." />
+  </div>
+
+  <div class="field">
+    <label for="type">Project Type</label>
+    <input class="input" id="type" name="Project Type" type="text"
+           placeholder="Business website, e-commerce, landing page..." />
+  </div>
+
+  <div class="field">
+    <label for="budget">Approx. Budget (optional)</label>
+    <input class="input" id="budget" name="Budget" type="text" placeholder="₹10,000 – ₹20,000" />
+  </div>
+
+  <div class="field">
+    <label for="message">Project Details</label>
+    <textarea class="textarea" id="message" name="Message"
+              placeholder="Tell me about your project..." required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">
+    <i class="fa-regular fa-paper-plane"></i> Send Message
+  </button>
+
+</form>
+</div>
 
         <!-- Direct Contact Info -->
         <div class="card">
@@ -1560,3 +1569,4 @@
   </script>
 </body>
 </html>
+
