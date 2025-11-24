@@ -12,7 +12,6 @@
   <!-- Icons -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-bx1vWmGDNxgZB+N1zf9lPmpuUap6gxaaqiOoZ6/5eo9+uFIl3kFmX7nT19vL8HUtZLTHB6vZlZ8Lh9L2z+gW3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
@@ -57,7 +56,6 @@
       display: block;
     }
 
-    /* Layout */
     main section {
       max-width: var(--max-width);
       margin: 0 auto;
@@ -88,11 +86,9 @@
       background: rgba(15, 23, 42, 0.85);
       margin-bottom: 10px;
     }
-    .pill-label i {
-      color: var(--accent2);
-    }
+    .pill-label i { color: var(--accent2); }
 
-    /* Header / Nav */
+    /* Header */
     header {
       position: sticky;
       top: 0;
@@ -101,7 +97,6 @@
       backdrop-filter: blur(14px);
       border-bottom: 1px solid rgba(31, 41, 55, 0.85);
     }
-
     .nav {
       max-width: var(--max-width);
       margin: 0 auto;
@@ -111,13 +106,11 @@
       justify-content: space-between;
       gap: 18px;
     }
-
     .logo-wrap {
       display: flex;
       align-items: center;
       gap: 0.7rem;
     }
-
     .logo-mark {
       width: 38px;
       height: 38px;
@@ -129,21 +122,13 @@
       font-weight: 700;
       box-shadow: 0 10px 30px rgba(79, 70, 229, 0.75);
     }
-
     .logo-text {
       display: flex;
       flex-direction: column;
       line-height: 1.25;
     }
-
-    .logo-text strong {
-      font-size: 0.95rem;
-    }
-
-    .logo-text span {
-      font-size: 0.7rem;
-      color: var(--text-muted);
-    }
+    .logo-text strong { font-size: 0.95rem; }
+    .logo-text span { font-size: 0.7rem; color: var(--text-muted); }
 
     .nav-links {
       display: flex;
@@ -151,13 +136,11 @@
       gap: 1.3rem;
       font-size: 0.9rem;
     }
-
     .nav-links a {
       color: var(--text-muted);
       position: relative;
       padding-bottom: 2px;
     }
-
     .nav-links a::after {
       content: "";
       position: absolute;
@@ -169,14 +152,8 @@
       border-radius: 999px;
       transition: width var(--transition);
     }
-
-    .nav-links a:hover {
-      color: #e5e7eb;
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
+    .nav-links a:hover { color: #e5e7eb; }
+    .nav-links a:hover::after { width: 100%; }
 
     .btn {
       border-radius: var(--radius-full);
@@ -192,23 +169,19 @@
       background: transparent;
       color: var(--text-main);
     }
-
     .btn-primary {
       background-image: var(--accent-gradient);
       box-shadow: 0 12px 32px rgba(79, 70, 229, 0.8);
     }
-
     .btn-primary:hover {
       transform: translateY(-1px) scale(1.01);
       filter: brightness(1.05);
     }
-
     .btn-ghost {
       border-color: rgba(148, 163, 184, 0.8);
       background: rgba(15, 23, 42, 0.9);
       color: var(--text-muted);
     }
-
     .btn-ghost:hover {
       border-color: var(--accent);
       color: #e5e7eb;
@@ -223,7 +196,6 @@
       font-size: 1.3rem;
       cursor: pointer;
     }
-
     .nav-links-mobile {
       display: none;
       flex-direction: column;
@@ -234,18 +206,9 @@
       max-width: var(--max-width);
       margin: 0 auto;
     }
-
-    .nav-links-mobile a {
-      color: var(--text-muted);
-    }
-
-    .nav-links-mobile a:hover {
-      color: #e5e7eb;
-    }
-
-    .nav-links-mobile.is-open {
-      display: flex;
-    }
+    .nav-links-mobile a { color: var(--text-muted); }
+    .nav-links-mobile a:hover { color: #e5e7eb; }
+    .nav-links-mobile.is-open { display: flex; }
 
     /* Hero */
     .hero {
@@ -257,32 +220,27 @@
       gap: 40px;
       align-items: center;
     }
-
     .hero-title {
       font-size: clamp(2.1rem, 4vw, 2.8rem);
       margin: 0 0 10px;
     }
-
     .gradient-text {
       background-image: var(--accent-gradient);
       -webkit-background-clip: text;
       color: transparent;
     }
-
     .hero-text {
       color: var(--text-muted);
       font-size: 0.96rem;
       max-width: 520px;
       margin-bottom: 18px;
     }
-
     .hero-badges {
       display: flex;
       flex-wrap: wrap;
       gap: 0.55rem;
       margin-bottom: 18px;
     }
-
     .badge {
       font-size: 0.78rem;
       padding: 3px 9px;
@@ -294,19 +252,13 @@
       align-items: center;
       gap: 0.35rem;
     }
-
-    .badge i {
-      font-size: 0.8rem;
-      color: #38bdf8;
-    }
-
+    .badge i { font-size: 0.8rem; color: #38bdf8; }
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 0.75rem;
       margin-bottom: 14px;
     }
-
     .hero-note {
       font-size: 0.8rem;
       color: var(--text-muted);
@@ -314,10 +266,7 @@
       align-items: center;
       gap: 0.4rem;
     }
-
-    .hero-note i {
-      color: var(--accent2);
-    }
+    .hero-note i { color: var(--accent2); }
 
     .hero-image-card {
       position: relative;
@@ -329,7 +278,6 @@
                   radial-gradient(circle at bottom, rgba(34, 197, 94, 0.22), transparent 55%),
                   #020617;
     }
-
     .hero-image-card img {
       width: 100%;
       height: 100%;
@@ -337,7 +285,6 @@
       object-fit: cover;
       opacity: 0.92;
     }
-
     .hero-floating-pill {
       position: absolute;
       left: 14px;
@@ -353,11 +300,7 @@
       gap: 0.35rem;
       backdrop-filter: blur(10px);
     }
-
-    .hero-floating-pill i {
-      color: #facc15;
-      font-size: 0.8rem;
-    }
+    .hero-floating-pill i { color: #facc15; font-size: 0.8rem; }
 
     /* Grids & Cards */
     .grid-3 {
@@ -365,13 +308,11 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 22px;
     }
-
     .grid-2 {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 22px;
     }
-
     .card {
       background: var(--bg-card);
       border-radius: var(--radius-lg);
@@ -382,14 +323,12 @@
       position: relative;
       overflow: hidden;
     }
-
     .card:hover {
       transform: translateY(-5px);
       border-color: rgba(129, 140, 248, 0.9);
       background: radial-gradient(circle at top left, rgba(79, 70, 229, 0.1), rgba(11, 16, 36, 0.98));
       box-shadow: 0 20px 50px rgba(15, 23, 42, 1);
     }
-
     .card-icon {
       width: 34px;
       height: 34px;
@@ -403,25 +342,14 @@
       color: #38bdf8;
       font-size: 1rem;
     }
-
-    .card-title {
-      margin: 0 0 3px;
-      font-size: 1rem;
-    }
-
-    .card-text {
-      margin: 0 0 8px;
-      font-size: 0.86rem;
-      color: var(--text-muted);
-    }
-
+    .card-title { margin: 0 0 3px; font-size: 1rem; }
+    .card-text { margin: 0 0 8px; font-size: 0.86rem; color: var(--text-muted); }
     .card-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.35rem;
       margin-top: 6px;
     }
-
     .card-tag {
       font-size: 0.72rem;
       padding: 2px 7px;
@@ -430,7 +358,6 @@
       color: var(--text-muted);
       background: rgba(15, 23, 42, 0.9);
     }
-
     .card-cta {
       margin-top: 8px;
       display: inline-flex;
@@ -439,10 +366,7 @@
       font-size: 0.8rem;
       color: #a5b4fc;
     }
-
-    .card-cta i {
-      font-size: 0.7rem;
-    }
+    .card-cta i { font-size: 0.7rem; }
 
     /* Portfolio */
     .portfolio-img {
@@ -456,7 +380,6 @@
       position: relative;
       overflow: hidden;
     }
-
     .portfolio-img::after {
       content: "";
       position: absolute;
@@ -465,11 +388,7 @@
       opacity: 0;
       transition: opacity var(--transition);
     }
-
-    .card:hover .portfolio-img::after {
-      opacity: 1;
-    }
-
+    .card:hover .portfolio-img::after { opacity: 1; }
     .portfolio-meta {
       display: flex;
       justify-content: space-between;
@@ -484,12 +403,10 @@
       font-weight: 600;
       margin: 4px 0 4px;
     }
-
     .pricing-period {
       font-size: 0.78rem;
       color: var(--text-muted);
     }
-
     .pricing-list {
       list-style: none;
       padding: 0;
@@ -497,20 +414,17 @@
       font-size: 0.84rem;
       color: var(--text-muted);
     }
-
     .pricing-list li {
       display: flex;
       align-items: flex-start;
       gap: 0.4rem;
       margin-bottom: 5px;
     }
-
     .pricing-list li i {
       color: var(--accent2);
       font-size: 0.7rem;
       margin-top: 3px;
     }
-
     .pricing-badge {
       position: absolute;
       top: 14px;
@@ -524,10 +438,7 @@
     }
 
     /* Skills */
-    .skill-item {
-      margin-bottom: 12px;
-    }
-
+    .skill-item { margin-bottom: 12px; }
     .skill-top {
       display: flex;
       justify-content: space-between;
@@ -535,7 +446,6 @@
       margin-bottom: 3px;
       color: var(--text-muted);
     }
-
     .skill-bar {
       width: 100%;
       height: 6px;
@@ -543,7 +453,6 @@
       background: rgba(31, 41, 55, 0.9);
       overflow: hidden;
     }
-
     .skill-bar-fill {
       height: 100%;
       border-radius: inherit;
@@ -561,7 +470,6 @@
       color: var(--text-muted);
       margin-bottom: 5px;
     }
-
     .project-links {
       display: flex;
       flex-wrap: wrap;
@@ -569,7 +477,6 @@
       margin-top: 8px;
       font-size: 0.8rem;
     }
-
     .project-links a {
       display: inline-flex;
       align-items: center;
@@ -583,7 +490,6 @@
       color: #e5e7eb;
       margin-bottom: 10px;
     }
-
     .testimonial-footer {
       display: flex;
       align-items: center;
@@ -591,7 +497,6 @@
       font-size: 0.78rem;
       color: var(--text-muted);
     }
-
     .stars {
       color: #facc15;
       font-size: 0.85rem;
@@ -603,7 +508,6 @@
       grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
       gap: 22px;
     }
-
     .field {
       display: flex;
       flex-direction: column;
@@ -611,11 +515,7 @@
       font-size: 0.82rem;
       margin-bottom: 8px;
     }
-
-    .field label {
-      color: var(--text-muted);
-    }
-
+    .field label { color: var(--text-muted); }
     .input,
     .textarea {
       border-radius: 12px;
@@ -628,7 +528,6 @@
       outline: none;
       transition: border-color var(--transition), box-shadow var(--transition), background var(--transition), transform var(--transition);
     }
-
     .input:focus,
     .textarea:focus {
       border-color: rgba(129, 140, 248, 0.9);
@@ -636,10 +535,14 @@
       background: rgba(15, 23, 42, 0.98);
       transform: translateY(-1px);
     }
+    .textarea { min-height: 120px; resize: vertical; }
 
-    .textarea {
-      min-height: 120px;
-      resize: vertical;
+    /* Honeypot (spam trap) – invisible to real users */
+    .hp-field {
+      display: none;
+      visibility: hidden;
+      height: 0;
+      overflow: hidden;
     }
 
     .contact-small {
@@ -647,7 +550,6 @@
       color: var(--text-muted);
       margin-top: 12px;
     }
-
     .contact-meta-item {
       display: flex;
       align-items: center;
@@ -656,7 +558,6 @@
       margin-bottom: 6px;
       color: var(--text-muted);
     }
-
     .contact-meta-item i {
       width: 26px;
       height: 26px;
@@ -670,14 +571,69 @@
       color: #a5b4fc;
     }
 
-    /* WhatsApp Floating Button */
+    /* Status message under form button */
+    #formStatus {
+      margin-top: 8px;
+      font-size: 0.8rem;
+    }
+    #formStatus.ok { color: #4ade80; }
+    #formStatus.err { color: #f97373; }
+
+    /* Thank You Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.88);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 80;
+    }
+    .modal-overlay.show { display: flex; }
+    .modal {
+      background: #020617;
+      border-radius: 18px;
+      padding: 22px 20px 18px;
+      max-width: 380px;
+      width: 90%;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      box-shadow: 0 16px 40px rgba(15, 23, 42, 1);
+      text-align: left;
+    }
+    .modal h3 {
+      margin: 0 0 6px;
+      font-size: 1.1rem;
+    }
+    .modal p {
+      margin: 0 0 14px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.55rem;
+    }
+
+    /* WhatsApp Floating Button with image icon */
     .whatsapp-fab {
       position: fixed;
       right: 18px;
       bottom: 18px;
       z-index: 40;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
-
+    .whatsapp-fab-text {
+      background: rgba(15, 23, 42, 0.98);
+      border-radius: 999px;
+      padding: 5px 10px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      border: 1px solid rgba(55, 65, 81, 0.95);
+      white-space: nowrap;
+    }
     .whatsapp-fab a {
       width: 56px;
       height: 56px;
@@ -686,30 +642,17 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.6rem;
-      color: white;
       box-shadow: 0 18px 40px rgba(22, 163, 74, 0.9);
       transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
     }
-
+    .whatsapp-fab a img {
+      width: 32px;
+      height: 32px;
+    }
     .whatsapp-fab a:hover {
       transform: translateY(-3px) scale(1.03);
       box-shadow: 0 24px 52px rgba(22, 163, 74, 0.95);
       filter: brightness(1.05);
-    }
-
-    .whatsapp-fab span {
-      position: absolute;
-      right: 110%;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(15, 23, 42, 0.98);
-      border-radius: 999px;
-      padding: 4px 10px;
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      border: 1px solid rgba(55, 65, 81, 0.95);
-      white-space: nowrap;
     }
 
     /* Footer */
@@ -720,7 +663,6 @@
       background: radial-gradient(circle at top, rgba(15, 23, 42, 0.98), #020617);
       font-size: 0.8rem;
     }
-
     .footer-inner {
       max-width: var(--max-width);
       margin: 0 auto;
@@ -731,20 +673,13 @@
       color: var(--text-muted);
       flex-wrap: wrap;
     }
-
     .footer-links {
       display: flex;
       flex-wrap: wrap;
       gap: 0.65rem;
     }
-
-    .footer-links a {
-      color: var(--text-muted);
-    }
-
-    .footer-links a:hover {
-      color: #e5e7eb;
-    }
+    .footer-links a { color: var(--text-muted); }
+    .footer-links a:hover { color: #e5e7eb; }
 
     /* Scroll reveal */
     .reveal {
@@ -777,30 +712,43 @@
     }
 
     @media (max-width: 720px) {
-      .nav-links {
-        display: none;
-      }
-      .nav-toggle {
-        display: inline-flex;
-      }
+      .nav-links { display: none; }
+      .nav-toggle { display: inline-flex; }
       .grid-3,
       .grid-2 {
         grid-template-columns: minmax(0, 1fr);
       }
-      .whatsapp-fab span {
-        display: none;
-      }
+      .whatsapp-fab-text { display: none; }
     }
   </style>
 </head>
 <body>
-  <!-- WhatsApp Floating Button -->
+  <!-- WhatsApp Floating Button with image -->
   <div class="whatsapp-fab">
-    <span>Chat on WhatsApp</span>
+    <div class="whatsapp-fab-text">Chat on WhatsApp</div>
     <a href="https://wa.me/918789929438?text=Hello%20Arsh%20Digital%20Agency%2C%20I%20need%20a%20website."
        target="_blank" rel="noopener">
-      <i class="fa-brands fa-whatsapp"></i>
+      <!-- Public WhatsApp icon image -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
     </a>
+  </div>
+
+  <!-- Thank You Modal -->
+  <div class="modal-overlay" id="thankYouOverlay">
+    <div class="modal">
+      <h3>Thank you for reaching out! 🎉</h3>
+      <p>
+        Your message has been received. I’ll review your project details and contact you on
+        email or WhatsApp as soon as possible.
+      </p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="closeModalBtn">Close</button>
+        <a href="https://wa.me/918789929438?text=Hi%20Arsh%20Digital%20Agency%2C%20I%20just%20filled%20the%20form."
+           class="btn btn-primary" target="_blank" rel="noopener">
+          Continue on WhatsApp
+        </a>
+      </div>
+    </div>
   </div>
 
   <!-- Header -->
@@ -882,7 +830,6 @@
     </div>
 
     <div class="hero-image-card reveal">
-      <!-- You can replace this hero image with your own later -->
       <img src="https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg"
            alt="Developer workspace with code and design" />
       <div class="hero-floating-pill">
@@ -1012,7 +959,7 @@
       </div>
     </section>
 
-    <!-- Portfolio: E-commerce & Landing Pages -->
+    <!-- Portfolio -->
     <section id="portfolio" class="reveal">
       <div class="pill-label">
         <i class="fa-solid fa-layer-group"></i> E-commerce & Landing Page Portfolio
@@ -1024,7 +971,6 @@
       </p>
 
       <div class="grid-3">
-        <!-- Portfolio 1 -->
         <div class="card">
           <div class="portfolio-img"
                style="background-image:url('https://images.pexels.com/photos/784399/pexels-photo-784399.jpeg');"></div>
@@ -1034,7 +980,7 @@
           </div>
           <h3 class="card-title">UrbanWear – Clothing Brand</h3>
           <p class="card-text">
-            Product grid, filters, product detail pages, cart & checkout with responsive design focused on mobile shoppers.
+            Product grid, filters, product detail pages, cart & checkout with responsive design for mobile shoppers.
           </p>
           <div class="card-tags">
             <span class="card-tag">E-commerce</span>
@@ -1046,7 +992,6 @@
           </a>
         </div>
 
-        <!-- Portfolio 2 -->
         <div class="card">
           <div class="portfolio-img"
                style="background-image:url('https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg');"></div>
@@ -1056,7 +1001,7 @@
           </div>
           <h3 class="card-title">FitBurn – 30-Day Challenge</h3>
           <p class="card-text">
-            Long-form landing page with sections for benefits, trainer intro, testimonials, FAQs, and multiple CTA buttons.
+            Long-form landing page with benefits, trainer intro, testimonials, FAQs, and multiple CTA buttons.
           </p>
           <div class="card-tags">
             <span class="card-tag">Landing page</span>
@@ -1068,7 +1013,6 @@
           </a>
         </div>
 
-        <!-- Portfolio 3 -->
         <div class="card">
           <div class="portfolio-img"
                style="background-image:url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg');"></div>
@@ -1078,7 +1022,7 @@
           </div>
           <h3 class="card-title">SpiceVilla – Restaurant Website</h3>
           <p class="card-text">
-            Digital menu, categories, mouth-watering food photos, table booking, and one-click WhatsApp ordering for takeaways.
+            Digital menu, categories, food photos, table booking, and one-click WhatsApp ordering for takeaways.
           </p>
           <div class="card-tags">
             <span class="card-tag">Restaurant</span>
@@ -1104,7 +1048,6 @@
       </p>
 
       <div class="grid-3">
-        <!-- Starter One-Page -->
         <div class="card">
           <span class="pricing-badge">For starters</span>
           <h3 class="card-title">Starter One-Page</h3>
@@ -1118,12 +1061,9 @@
             <li><i class="fa-solid fa-check"></i> WhatsApp & call buttons</li>
             <li><i class="fa-solid fa-check"></i> Basic on-page SEO setup</li>
           </ul>
-          <a href="#contact" class="btn btn-ghost">
-            Get this package
-          </a>
+          <a href="#contact" class="btn btn-ghost">Get this package</a>
         </div>
 
-        <!-- Business Website -->
         <div class="card">
           <span class="pricing-badge">Most popular</span>
           <h3 class="card-title">Business Website</h3>
@@ -1137,12 +1077,9 @@
             <li><i class="fa-solid fa-check"></i> Contact forms + WhatsApp integration</li>
             <li><i class="fa-solid fa-check"></i> Google Analytics & basic SEO setup</li>
           </ul>
-          <a href="#contact" class="btn btn-primary">
-            I want this plan
-          </a>
+          <a href="#contact" class="btn btn-primary">I want this plan</a>
         </div>
 
-        <!-- E-commerce Store -->
         <div class="card">
           <span class="pricing-badge">For online stores</span>
           <h3 class="card-title">E-commerce Store</h3>
@@ -1156,14 +1093,12 @@
             <li><i class="fa-solid fa-check"></i> Payment integration (Razorpay/Stripe etc.)</li>
             <li><i class="fa-solid fa-check"></i> Basic training to manage products</li>
           </ul>
-          <a href="#contact" class="btn btn-ghost">
-            Discuss your store
-          </a>
+          <a href="#contact" class="btn btn-ghost">Discuss your store</a>
         </div>
       </div>
     </section>
 
-    <!-- Skills & Tech -->
+    <!-- Skills -->
     <section id="skills" class="reveal">
       <div class="pill-label">
         <i class="fa-solid fa-microchip"></i> Skills & Tech Stack
@@ -1354,10 +1289,8 @@
               <span>Founder, UrbanWear Clothing</span>
             </div>
             <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
           </div>
@@ -1374,10 +1307,8 @@
               <span>Owner, SpiceVilla Restaurant</span>
             </div>
             <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </div>
           </div>
@@ -1394,10 +1325,8 @@
               <span>Online Educator</span>
             </div>
             <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star-half-stroke"></i>
             </div>
           </div>
@@ -1417,55 +1346,52 @@
       </p>
 
       <div class="contact-grid">
-        <!-- Contact Form (mailto simple version) -->
+        <!-- Form that talks to Google Apps Script -->
         <div class="card">
-          <!-- NOTE: mailto opens the user’s email app. For advanced forms you can connect to a backend later. -->
-         <form action="https://formsubmit.co/arshadwarsi40@gmail.com" method="POST">
+          <form id="contactForm">
+            <!-- Honeypot spam field (bots fill it, humans don’t) -->
+            <div class="hp-field">
+              <label>Leave this field empty</label>
+              <input type="text" name="website" autocomplete="off" />
+            </div>
 
-  <!-- Disable Captcha -->
-  <input type="hidden" name="_captcha" value="false">
-
-  <!-- Redirect to thank-you message -->
-  <input type="hidden" name="_next" value="https://arshadwarsi.github.io/?success=true">
-
-  <div class="field">
-    <label for="name">Your Name</label>
-    <input class="input" id="name" name="Name" type="text" placeholder="Enter your name" required />
-  </div>
-
-  <div class="field">
-    <label for="email">Email Address</label>
-    <input class="input" id="email" name="Email" type="email" placeholder="you@example.com" required />
-  </div>
-
-  <div class="field">
-    <label for="whatsapp">WhatsApp Number</label>
-    <input class="input" id="whatsapp" name="WhatsApp" type="text" placeholder="+91 ..." />
-  </div>
-
-  <div class="field">
-    <label for="type">Project Type</label>
-    <input class="input" id="type" name="Project Type" type="text"
-           placeholder="Business website, e-commerce, landing page..." />
-  </div>
-
-  <div class="field">
-    <label for="budget">Approx. Budget (optional)</label>
-    <input class="input" id="budget" name="Budget" type="text" placeholder="₹10,000 – ₹20,000" />
-  </div>
-
-  <div class="field">
-    <label for="message">Project Details</label>
-    <textarea class="textarea" id="message" name="Message"
-              placeholder="Tell me about your project..." required></textarea>
-  </div>
-
-  <button type="submit" class="btn btn-primary">
-    <i class="fa-regular fa-paper-plane"></i> Send Message
-  </button>
-
-</form>
-</div>
+            <div class="field">
+              <label for="name">Your Name</label>
+              <input class="input" id="name" name="name" type="text" placeholder="Enter your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input class="input" id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="whatsapp">WhatsApp Number</label>
+              <input class="input" id="whatsapp" name="whatsapp" type="text" placeholder="+91 8789929438" />
+            </div>
+            <div class="field">
+              <label for="type">Project Type</label>
+              <input class="input" id="type" name="projectType" type="text"
+                     placeholder="Business website, e-commerce, landing page..." />
+            </div>
+            <div class="field">
+              <label for="budget">Approx. Budget (optional)</label>
+              <input class="input" id="budget" name="budget" type="text"
+                     placeholder="e.g. ₹10,000 – ₹20,000" />
+            </div>
+            <div class="field">
+              <label for="message">Project Details</label>
+              <textarea class="textarea" id="message" name="message"
+                        placeholder="Share about your business, goals, and any reference website you like."
+                        required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitBtn">
+              <i class="fa-regular fa-paper-plane"></i> Send Message
+            </button>
+            <div id="formStatus"></div>
+          </form>
+          <div class="contact-small">
+            You can also directly continue on WhatsApp using the green button in the corner.
+          </div>
+        </div>
 
         <!-- Direct Contact Info -->
         <div class="card">
@@ -1514,21 +1440,21 @@
   </footer>
 
   <script>
+    // === CONFIG: replace with your deployed Apps Script Web App URL ===
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzWS3AVRE_N5DEJU1yyb8An7CyBPY_MBAyO9SHW10_X_Z7WEeQrgi3bk17RwFEsH5xg9w/exec";
+
     // Dynamic year
     document.getElementById("year").textContent = new Date().getFullYear();
 
     // Mobile nav toggle
     const navToggle = document.getElementById("navToggle");
     const navMobile = document.getElementById("navMobile");
-
     navToggle.addEventListener("click", () => {
       navMobile.classList.toggle("is-open");
       navToggle.innerHTML = navMobile.classList.contains("is-open")
         ? '<i class="fa-solid fa-xmark"></i>'
         : '<i class="fa-solid fa-bars"></i>';
     });
-
-    // Close mobile nav on link click
     navMobile.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         navMobile.classList.remove("is-open");
@@ -1566,6 +1492,90 @@
       { threshold: 0.3 }
     );
     skillBars.forEach((bar) => skillObserver.observe(bar));
+
+    // Thank You modal
+    const thankYouOverlay = document.getElementById("thankYouOverlay");
+    const closeModalBtn = document.getElementById("closeModalBtn");
+    closeModalBtn.addEventListener("click", () => {
+      thankYouOverlay.classList.remove("show");
+    });
+    thankYouOverlay.addEventListener("click", (e) => {
+      if (e.target === thankYouOverlay) {
+        thankYouOverlay.classList.remove("show");
+      }
+    });
+
+    // Contact Form -> Google Apps Script
+    const form = document.getElementById("contactForm");
+    const submitBtn = document.getElementById("submitBtn");
+    const statusEl = document.getElementById("formStatus");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      statusEl.textContent = "";
+      statusEl.className = "";
+
+      const formData = new FormData(form);
+      // Honeypot spam check
+      if (formData.get("website")) {
+        // Bot likely filled the hidden field
+        statusEl.textContent = "Something went wrong. Please try again.";
+        statusEl.classList.add("err");
+        return;
+      }
+
+      const payload = {
+        name: formData.get("name") || "",
+        email: formData.get("email") || "",
+        whatsapp: formData.get("whatsapp") || "",
+        projectType: formData.get("projectType") || "",
+        budget: formData.get("budget") || "",
+        message: formData.get("message") || "",
+        // simple extra field we can use server-side for spam/log
+        userAgent: navigator.userAgent,
+      };
+
+      if (!SCRIPT_URL || SCRIPT_URL.includes("YOUR_APPS_SCRIPT_WEB_APP_URL_HERE")) {
+        statusEl.textContent = "Form backend not configured yet. Please contact via WhatsApp.";
+        statusEl.classList.add("err");
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+
+      try {
+        const res = await fetch(SCRIPT_URL, {
+          method: "POST",
+          mode: "cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        });
+
+        if (!res.ok) {
+          throw new Error("Network error");
+        }
+
+        const data = await res.json().catch(() => ({}));
+        // Expecting { success: true } from Apps Script
+        if (data && data.success) {
+          form.reset();
+          statusEl.textContent = "Message sent successfully! I’ll get back to you soon.";
+          statusEl.classList.add("ok");
+          thankYouOverlay.classList.add("show");
+        } else {
+          statusEl.textContent = "Message sent, but response was unexpected. I’ll still check the sheet/email.";
+          statusEl.classList.add("ok");
+        }
+      } catch (err) {
+        console.error(err);
+        statusEl.textContent = "Could not send message. Please try again or use WhatsApp.";
+        statusEl.classList.add("err");
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i class="fa-regular fa-paper-plane"></i> Send Message';
+      }
+    });
   </script>
 </body>
 </html>
